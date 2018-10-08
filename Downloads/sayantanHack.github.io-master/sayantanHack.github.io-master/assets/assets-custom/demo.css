@@ -1,0 +1,322 @@
+/* ==========================================================================
+Header
+========================================================================== */
+.pic img{
+
+    
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  
+  }
+
+
+
+  /* projects */
+
+.projects{
+    font-family: 'Dosis', sans-serif;
+    margin: auto;
+  
+  }
+  
+  .projects ul{
+    /* list-style-type: none; */
+    font-size: 1.6em;
+    color: #252121;
+    padding: 24px;
+    padding-left: 80px;
+    text-align:left;
+  }
+  .projects ul li{
+    margin-top: 16px;
+  
+  }
+
+  
+
+body {
+    margin-right: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nomob {
+    display: none;
+}
+
+.nodesk {
+    display: inline-block;
+}
+
+@media (min-width: 600px) and (orientation:landscape) {
+
+    .nomob {
+        display: block;
+    }
+
+    .nodesk {
+        display: none;
+    }
+}
+
+.main {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: -80px;
+    right: 0;
+}
+
+.event_title,
+.event_details {
+    color: rgb(90, 90, 90);
+    font-family: 'Open Sans', sans-serif;
+
+}
+.event_title_track{
+    padding:10px;
+    margin:5px;
+    font-size:26px;
+}
+
+.page-header {
+    opacity: 1;
+}
+
+.texter,
+.navbar-toggler-icon {
+    color: rgb(74, 74, 74);
+}
+
+
+
+#joinbtn {
+    background-color: rgb(83, 109, 254);
+    margin: 5px;
+}
+
+.logo {
+    color: rgb(83, 109, 254);
+    font-family: Open Sans;
+    font-weight: 500;
+    font-size: 20px;
+    padding:10px;
+    vertical-align: middle;
+}
+
+#fb {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+#pro {
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+
+
+.main-raised {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.navbar-toggler-icon {
+    color: rgb(64, 64, 64);
+}
+
+#footie {
+    color: rgb(210, 210, 210);
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+#heart {
+    color: rgb(250, 36, 5);
+    padding: 3px;
+}
+
+
+.navbar.fixed-top {
+    border-radius: 0;
+    padding: 0 !important;
+}
+
+#header-text {
+    cursor: pointer;
+}
+
+#hometop-container {
+    text-align: center;
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%) translateX(5%);
+}
+
+.nav-link{
+    color: #3c4858 !important;
+}
+
+.title
+{
+    font-family: 'Open Sans', sans-serif;
+    margin-top:0px;
+}
+.description
+{
+    color: rgb(64, 64, 64);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.icon
+{
+    font-size:30px;
+    background:rgb(247, 96, 184);
+    color:white;
+    padding:10px;
+    border-radius:50px;
+    margin:4px;
+    padding-left:18px;
+    padding-right:18px;
+
+}
+
+#mobile 
+{
+    background: rgb(0, 102, 255);
+}
+
+#details_redirect
+{
+    font-size: 16px;
+    color:rgb(0, 102, 255);
+    transition: 0.3s ease;
+}
+
+#details_redirect:hover{
+    color:rgb(247, 96, 184);
+}
+
+/* ==========================================================================
+Footer
+========================================================================== */
+
+.page-footer {
+    font-size: 40px;
+    padding-top: 20px;
+    color: #fff;
+    background-color: rgb(70, 70, 70);
+}
+
+.page-footer li a i,
+.page-footer1 li a i {
+
+    color: white;
+    background-color: rgb(83, 109, 254);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 0 6px 8px 1px rgba(0, 0, 0, .18);
+}
+
+
+.footer-container {
+    width: 100%;
+}
+
+.page-footer {
+    text-align: left;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 10%;
+    color: #fff;
+    background-color: rgb(70, 70, 70);
+}
+
+.page-footer1 {
+    text-align: left;
+    padding-left: 10%;
+    font-size: 40px;
+    padding-top: 20px;
+    color: #fff;
+    background-color: rgb(50, 50, 50);
+}
+
+
+
+/* ==========================================================================
+To top
+========================================================================== */
+
+#team_thumb {
+    width: 200px;
+    height: 200px;
+    border: 4px solid white;
+    border-radius: 50%;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.to-top {
+    height: 60px;
+    background-color: #495061;
+}
+
+.to-top .to-top-wrap {
+    height: 60px;
+    width: 70px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+.to-top .to-top-wrap a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.to-top .to-top-wrap a:hover,
+.to-top .to-top-wrap a:focus {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.to-top .to-top-wrap i {
+    font-size: 30px;
+    line-height: 55px;
+}
+
+.to-top .row {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+#red_text {
+    color: rgb(235, 65, 50);
+}
+
+#blue_text {
+    color: rgb(0, 102, 255);
+}
+
+#green_text {
+    color: rgb(252, 189, 0);
+}
+
+#orange_text {
+    color: rgb(252, 189, 0);
+}
