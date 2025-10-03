@@ -1,81 +1,159 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <title>Sayanatan Datta </title> <meta charset="utf-8">
-    <link rel="icon" href="icon.png">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayantan Datta | Cyber Security Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav class="nav-bar contain">
-          <a onclick="initScroll('about'); return false;" href="#">About</a>
-          <a onclick="initScroll('projects'); return false;" href="#">Projects</a>
-          <a onclick="initScroll('contact'); return false;" href="#">Contact</a>
-    </nav>
-      <div class="pic">
-          <img src="pic.JPG"  alt="Avatar of Sayantan">
-      </div>
-      <div class="intro">
-            <h1>Hi, I`m Sayantan</h1>
-            <h2>Tech Enthusiast</h2>
-            <h3>WEB || SECURITY || PROGRAMMING</h3>
-      </div>
-  </header>
-  <div id="container">
-    <div class="about"><a id="about">
-      <br>
-      <h3>About me</h3>
-      <h2><font color="#FF9933">Who</font> <font color="#FFFFFF">Am</font> <font color="#138808">I</font></h2>
-      <p>Though I`m not from any technical background. I`ve a solid interest in tech. Mainly I love the Ethical Hacking & Cyber security.
-        But nowadays I put my hands into various types of language like Python, JS , Kotlin etc. I`m an opensource lover, I love to contribute.
-        I`m a contributor of Mozillz(l10n) , Google Local Guide(Google Map), Crowdsource(for ML & AI),Koha (open source library management software), FCC etc. When I get boared I play games or do some editing & upload videos on youtube .I have a habit of enrolling online coures , I had enrolled over 60-65 online courses(though most of them are unfinished ). I`m vissible at most of the tech meet-ups, events in Kolkata. Tech groups I`m in - Facebook Developer Circle Kolkata , GDG Kolkata, WTM Kolkata, DSC Kolkata, Sillycon(OWASP + Node School + Null Kolkata) ,West Bengal Local Guides. I was the co-speaker of Log Out Cyber Awareness Campaigning. I got google shoolarship for Udacity Nanodegree .
-      </p></a>
-    </div>
 
-    <div class="projects"><a id="projects">
-      <h2>I`ve done so far</h2>
-        <div class="shadow">
-          <ul>
-            <li>OPEN SOURCE CONTRIBUTOR</li>
-            <li>NSS VOLUNTEER</li>
-            <li>GOOGLE UDACITY SCHOLARSHIP RECIPIENT</li>
-            <li>GOOGLE DEVELOPERS GROUP MEMBER</li>
-            <li>FACEBOOK DEVELOPER CIRCLE MEMBER</li>
-            <li>KOTLIN USER GROUP KOLKATA</li>
-            <li>MLCC (Machine Learning Crash Course) Facilitator</li>
-          </ul>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">SD</a>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
+    </nav>
 
-      </a>
-    </div>
+    <main>
+        <section class="hero" id="home">
+            <canvas id="particleCanvas"></canvas>
+            <div class="hero-content">
+                <div class="glitch-wrapper">
+                    <h1 class="hero-title glitch" data-text="Sayantan Datta">Sayantan Datta</h1>
+                </div>
+                <h2 class="hero-subtitle">
+                    I build & secure <span class="typing-dynamic"></span>
+                </h2>
+                <p class="hero-description">
+                    A Cyber Security Engineer and Ethical Hacker focused on uncovering threats vulnerabilities from digital frontiers and creating secure, resilient systems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
 
+        <section class="section reveal" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Hello! I'm Sayantan, a cybersecurity professional with a passion for offensive security and threat mitigation. My technical expertise includes manual penetration testing of web applications and APIs, cloud security assessments, and implementing secure SDLC practices.</p>
+                        <p>With a strong background in Vulnerability Assessment and Penetration Testing (VAPT), Red Teaming, and Cloud Security, I specialize in identifying and remediating security flaws. I thrive on the challenge of simulating real-world attacks to strengthen defenses and ensure robust security postures.</p>
+                        <p>
+Beyond my professional role, I am co-founder of BSides Kolkata, part of many security and technical communities and I enjoy mentoring aspiring cybersecurity professionals.</p>
+                    </div>
+                    <div class="about-visual">
+                         
+                        <div class="visual-wrapper">
+                            <img src="Assets/SD_photo.png" class="about-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.59L7.41 14 6 15.41l5 5 8-8L17.59 11 11 17.59zM12 4c1.93 0 3.5 1.57 3.5 3.5S13.93 11 12 11s-3.5-1.57-3.5-3.5S10.07 4 12 4z" alt="A photo of Sayantan">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="section reveal" id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Arsenal</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">Penetration Testing</div>
+                    <div class="skill-card">Malware Analysis</div>
+                    <div class="skill-card">Network Security</div>
+                    <div class="skill-card">Incident Response</div>
+                    <div class="skill-card">Cryptography</div>
+                    <div class="skill-card">Python & Bash</div>
+                    <div class="skill-card">Metasploit</div>
+                    <div class="skill-card">Wireshark</div>
+                    <div class="skill-card">Reverse Engineering</div>
+                    <div class="skill-card">Cloud Security (AWS)</div>
+                </div>
+            </div>
+        </section>
 
-    <footer>
+        <section class="section reveal" id="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 class="project-title">SecureAuth Protocol</h3>
+                        <p class="project-description">A custom multi-factor authentication protocol using TOTP and cryptographic signatures to enhance application security.</p>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>Flask</li>
+                            <li>Cryptography</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Network Intrusion Detector</h3>
+                        <p class="project-description">A real-time NIDS that analyzes packet captures using machine learning to identify and flag suspicious network activities.</p>
+                        <ul class="project-tech">
+                            <li>Scapy</li>
+                            <li>Python</li>
+                            <li>TensorFlow</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Malware Sandbox Analysis</h3>
+                        <p class="project-description">Authored reports on APT malware behavior within a Cuckoo Sandbox, detailing infection vectors and C2 communications.</p>
+                        <ul class="project-tech">
+                            <li>Cuckoo</li>
+                            <li>Volatility</li>
+                            <li>YARA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="connect"><a id="contact"></a>
-          <h2>Follow me on</h2>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/sayantan/"><i class="fa fa-linkedin fa-2x" ></i></a>
-            <a href="https://twitter.com/sayantanHack"><i class="fa fa-twitter fa-2x" ></i></a>
-            <a href="https://github.com/sayantanHack"><i class="fa fa-github fa-2x" ></i></a>
-            <a href="https://plus.google.com/u/0/116382384824422061416"> <i class="fa fa-google-plus fa-2x" > </i></a>
-            <a class="med" href="https://medium.com/@sayantandatta97"><i class="fa fa-medium fa-2x"></i></a>
-            <a href="https://www.youtube.com/sayantandatta8"> <i class="fa fa-youtube-play fa-2x" ></i></a>
-          </div>
-      </div>
+        <section class="section reveal" id="contact">   
+            <div class="container contact-container">
+                <h2 class="section-title">Establish Connection</h2>
+                <p class="contact-text">Ask me your Security related thoughts. I`m open for discussing new projects. Whether you have a question or just want to connect, feel free to reach out.</p>
+                <a href="mailto:cybersayantan@gmail.com" class="btn btn-primary">Contact Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sayantan" target="_blank" aria-label="LinkedIn">
+                    <svg xmlns="https://www.linkedin.com/in/sayantan" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"></path></svg>
+                </a>
+                <a href="https://x.com/sayantanhack" target="_blank" aria-label="Twitter">
+                    <svg xmlns="https://x.com/sayantanhack" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                </a>
+                <a href="https://medium.com/@sayantanHack" target="_blank" aria-label="Medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M5.688 4.938H.812V4.625h11.25v.313H7.812v13.25L12.438 4.938h.5L18 18.188V4.938h-2.5v-.313h8.313v.313H21v13.563l-5.625-13.5V19h.313v.313H9.5V19h.313V6.313L5.688 18.5V4.938z"></path></svg>
+                </a>
+                <a href="https://github.com/sayantanHack" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M12 .297a12 12 0 00-3.797 23.39c.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.338.73-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.47-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 016.003 0c2.29-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.803 5.625-5.475 5.92.43.37.814 1.102.814 2.222 0 1.606-.015 2.898-.015 3.293 0 .32.216.694.825.576A12 12 0 0012 .297z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2025 Sayantan Datta. All rights reserved.</p>
+        </div>
     </footer>
 
-    <div id="top">
-      <a onclick="toTop('top'); return false;" href="#">
-          <img src="top.png" alt="go to top">
-        </a>
-    </div>
-  </div>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
